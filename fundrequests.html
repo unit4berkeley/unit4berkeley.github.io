@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Unit 4 Hall Association: Home</title>
+    <title>Unit 4 Hall Association: Fund Requests</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="http://unit4berkeley.github.io/css/bootstrap.css" media="screen">
     <link rel="stylesheet" href="http://unit4berkeley.github.io/css/font-awesome.min.css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	  <script src="http://unit4berkeley.github.io/js/bootstrap.min.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -49,30 +51,28 @@
       <div class="row">
         <div class="col-md-1">
         </div>
-        <div class="col-md-10">
-          <h1>Demographics</h1>
-          <span style="float: right; font-size: 13px;">
-            <em>Compiled by Vivian Fang, Michelle Zhang, Girish Balaji, and Ram Kalidhindi</em>
-          </span>
-          <span style="font-size: 15px;">
-            <br>
-            A survey was sent out to Unit 4 residents during move-in week. Here are the results! You can hover over any of the graphs for more information.
-          </span>
-          <br>
-          <br /><strong>Who Answered This Survey?</strong>
-          <iframe frameborder="0" height="298" scrolling="no" src="https://docs.google.com/spreadsheets/d/1lVhZ8vb2TAK_TJDNqYYJBDydep_IaaXyal05vH-pwcA/pubchart?oid=1638457711&amp;format=interactive" width="90%"></iframe>
+        <div class="col-md-10 col-xs-12">
+          <h2>Need money for a residence hall project? Fill out a fund request!</h2>
+          <p>Follow these four steps:
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-download"></i> Download the fund request form: <a href="/img/FundRequestForm.pdf">http://unit4berkeley.github.io/img/FundRequestForm.pdf</a></li>
+            <li><i class="fa-li fa fa-pencil"></i> Fill out the fund request form</li>
+            <li><i class="fa-li fa fa-paper-plane-o"></i> Fill out the <a href="#form" class="toggle">submission form</a>
 
-          <br /><br /><strong>Majors (General Categories)</strong>
-          <iframe frameborder="0" height="487" scrolling="no" src="https://docs.google.com/spreadsheets/d/1lVhZ8vb2TAK_TJDNqYYJBDydep_IaaXyal05vH-pwcA/pubchart?oid=981272888&amp;format=interactive" width="90%"></iframe>
-
-          <br /><br /><strong>Majors (Specfic)</strong>
-          <iframe frameborder="0" height="511" scrolling="no" src="https://docs.google.com/spreadsheets/d/1lVhZ8vb2TAK_TJDNqYYJBDydep_IaaXyal05vH-pwcA/pubchart?oid=1790891710&amp;format=interactive" width="90%"></iframe>
-
-          <br /><br /><strong>Classes Taking</strong>
-          <span style="float: right; font-size: 13px;"><em>Ranked by importance (1 = most important, 5 = least important)</em></span> <iframe frameborder="0" height="2858" scrolling="no" src="https://docs.google.com/spreadsheets/d/1lVhZ8vb2TAK_TJDNqYYJBDydep_IaaXyal05vH-pwcA/pubchart?oid=2088525045&amp;format=interactive" width="90%"></iframe>
+            <div id="form" class="hidden" align="center"><iframe src="https://docs.google.com/forms/d/1mHGsiES28zElHAEkeHHUHoIiJvthgD8TZqhHSfbTt6c/viewform?embedded=true" width="80%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></div></li>
+            <li><i class="fa-li fa fa-usd"></i> Come to the next hall association meeting to present your fund request!</li>
+          </ul></p>
         </div>
-      <div class="col-md-1">
+        <div clas=s"col-md-1">
+        </div>
       </div>
     </div>
   </body>
 </html>
+<script>
+$('.toggle').click(function (event) {
+	event.preventDefault();
+	var target = $(this).attr('href');
+	$(target).toggleClass('hidden show');
+});
+</script>
