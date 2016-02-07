@@ -55,12 +55,13 @@
           <h2>Need money for a residence hall project? Fill out a fund request!</h2>
           <p>Follow these four steps:
           <ul class="fa-ul">
-            <li><i class="fa-li fa fa-download"></i> Download the fund request form: <a href="/img/FundRequestForm.pdf">http://unit4berkeley.github.io/img/FundRequestForm.pdf</a></li>
+            <li><i class="fa-li fa fa-download"></i> Download the fund request form: <a href="/img/FundRequestForm.pdf" target="_blank">http://unit4berkeley.github.io/img/FundRequestForm.pdf</a></li>
             <li><i class="fa-li fa fa-pencil"></i> Fill out the fund request form</li>
-            <li><i class="fa-li fa fa-paper-plane-o"></i> Fill out the <a href="#form" class="toggle">submission form</a>
-
-            <div id="form" class="hidden" align="center"><iframe src="https://docs.google.com/forms/d/1mHGsiES28zElHAEkeHHUHoIiJvthgD8TZqhHSfbTt6c/viewform?embedded=true" width="80%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></div></li>
+            <li><i class="fa-li fa fa-paper-plane-o"></i> Fill out the <a href="#form" class="toggle">submission form</a>.</li>
+            <div id="form" align="center"><iframe src="https://docs.google.com/forms/d/1mHGsiES28zElHAEkeHHUHoIiJvthgD8TZqhHSfbTt6c/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></div></li>
             <li><i class="fa-li fa fa-usd"></i> Come to the next hall association meeting to present your fund request!</li>
+            <li><i class="fa-li fa fa-question"></i>Check the status of your fund request <a href="#status" class="toggle">here</a>.</li>
+            <div id="status"><iframe width="100%" height="600px" src="https://docs.google.com/spreadsheets/d/1JBSctg4SzALFVgO0E7h2-i-KIanNkUHWnjcMyC1lgJ4/pubhtml?gid=753390544&amp;single=true&amp;widget=true&amp;headers=false"></iframe></div>
           </ul></p>
         </div>
         <div clas=s"col-md-1">
@@ -70,9 +71,11 @@
   </body>
 </html>
 <script>
+$('#form').hide();
+$('#status').hide();
 $('.toggle').click(function (event) {
 	event.preventDefault();
 	var target = $(this).attr('href');
-	$(target).toggleClass('hidden show');
+	$(target).slideToggle("fast");
 });
 </script>
